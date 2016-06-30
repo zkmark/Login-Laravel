@@ -12,4 +12,12 @@ return [
     */
     'failed'   => 'Estas credenciales no coinciden con nuestros registros.',
     'throttle' => 'Demasiados intentos de acceso. Por favor intente nuevamente en :seconds segundos.',
+
+    'errors'=>'Por favor corrige los siguientes errores',
+    //Register
+    'register_title' => 'Registro',
+    //Login
+    'login_title' => 'Login',
+    'remember' => 'Recordar',
+    'forgot_pass' => 'Olvidaste tu contraseña?'
 ];
