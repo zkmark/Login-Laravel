@@ -17,8 +17,8 @@
 							</ul>
 						</div>
 					@endif
-
-					<form class="form-horizontal" role="form" method="POST" action="/auth/login">
+					
+					<form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">

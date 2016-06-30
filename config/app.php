@@ -12,7 +12,7 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-
+    //cambiar a false en .env
     'debug' => env('APP_DEBUG', false),
 
     /*
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Mexico_City',
 
     /*
     |--------------------------------------------------------------------------
@@ -145,6 +145,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //My
+        Collective\Html\HtmlServiceProvider::class,
+
     ],
 
     /*
@@ -192,6 +195,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        //my
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
