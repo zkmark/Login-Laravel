@@ -30,6 +30,7 @@ class AuthController extends Controller
      */
     public function __construct()
     {
+        //Si no esta conectado no vera getLogout
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 

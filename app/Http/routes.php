@@ -53,3 +53,11 @@ Route::post('password/email', 'Auth\PasswordController@postEmail');
 // Password reset routes...
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+
+//Midelware Por grupo de rutas (Tambien se pasan por controllers)
+Route::group(['middleware'=> 'auth'], function(){
+	Route::get('users', function(){
+		return view('admin.users');
+	});
+});

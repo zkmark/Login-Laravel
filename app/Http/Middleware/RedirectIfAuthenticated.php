@@ -34,6 +34,7 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next)
     {
+        //Si el user esta conectado
         if ($this->auth->check()) {
             return redirect('/');
         }
